@@ -35,7 +35,7 @@ class SlapperHuman extends Human {
             ];
             $player->dataPacket($pk);
 
-            $this->inventory->sendArmorContents($player);
+            $this->inventory->sendArmorContents($player)->sendMessage("Hellow");
 
             $add = new PlayerListPacket();
             $add->type = 0;
